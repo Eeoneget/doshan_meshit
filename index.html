@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="format-detection" content="telephone=no">
+    <style>
+        .main-img {
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        #img {
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        .hero_title {
+            text-align: center;
+        }
+
+        .hero_blue,.hero_btn,.hero_blue-flex,.notification {
+            background: #141157  !important;
+        }
+
+        .overflow img {
+            width: 25rem;
+            border-radius: 1.2rem;
+        }
+
+        .overflow {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 2rem;
+            overflow-y: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: hsl(0 0% 50%);
+        }
+
+        .article_card {
+            background-image: url(https://kazan-kremlin.ru/wp-content/uploads/dsc09296-scaled.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero_title,.cta__title_blue {
+            color: #141157 !important;
+        }
+
+        .article_card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            border-radius: 1.5rem;
+            z-index: -1;
+        }
+
+        .block_left__title {
+            font-size: 1.5rem !important;
+            line-height: normal !important;
+        }
+
+        .take_block__left,.take_block__right {
+            flex-basis: 50%;
+        }
+
+        .block_right__title {
+            margin-bottom: 0 !important;
+        } 
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+        }
+        .footer{max-width:100%;background-color:#000;text-align:center;padding:2rem}.footer .by-link{background-color:#000;color:#fff;text-align:center;text-decoration:underline}.footer .by-link span{font-family:"Saira Stencil One",sans-serif}.container{width:100%;margin:0 auto}@keyframes opac{0%{opacity:0%}100%{opacity:100%}}@keyframes line{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(-100rem);transform:translateX(-100rem)}}@keyframes shake{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}25%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}50%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}75%{-webkit-transform:rotate(-2deg) scale(1.02);transform:rotate(-2deg) scale(1.02)}100%{-webkit-transform:rotate(0deg) scale(1.03);transform:rotate(0deg) scale(1.03)}}@keyframes elastic{0%{-webkit-transform:scale(1);transform:scale(1)}30%{-webkit-transform:scaleX(1.25) scaleY(0.75);transform:scaleX(1.25) scaleY(0.75)}40%{-webkit-transform:scaleX(0.75) scaleY(1.25);transform:scaleX(0.75) scaleY(1.25)}60%{-webkit-transform:scaleX(1.15) scaleY(0.85);transform:scaleX(1.15) scaleY(0.85)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}html{font-size:10px}body{font-family:"Roboto",sans-serif}.none{display:none}html{font-size:10px;background:#fff}.none{display:none}*{padding:0;margin:0;border:none}*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}a,a:link,a:visited{text-decoration:none}a:hover{text-decoration:none}aside,nav,footer,header,section,main{display:block}h1,h2,h3,h4,h5,h6,p{font-size:inherit;font-weight:inherit}ul,ul li{list-style:none}img{vertical-align:top}img,svg{max-width:100%;height:auto}address{font-style:normal}input,textarea,button,select{font-family:inherit;font-size:inherit;color:inherit;background-color:rgba(0,0,0,0)}input::-ms-clear{display:none}button,input[type=submit]{display:inline-block;-webkit-box-shadow:none;box-shadow:none;background-color:rgba(0,0,0,0);background:none;cursor:pointer}input:focus,input:active,button:focus,button:active{outline:none}button::-moz-focus-inner{padding:0;border:0}label{cursor:pointer}legend{display:block}
+    </style>
+    <title>Сборы Мечеть</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <div class="kaspi_block">
+                    <img src="https://companieslogo.com/img/orig/KKS.F.D-d5cf09c2.png?t=1685426980" alt="kaspi">
+                    <div class="kaspi_right">
+                        <p>8 (747) 110-68-58</p>
+                        <p>Гульнур К</p>
+                    </div>
+                </div>
+
+                <h1 class="hero_title">
+                    100 ЖЫЛДА БІР САЛЫНАТЫН АЛЛАНЫҢ ҮЙІНЕ ӨЗ ҮЛЕСІНДІ ҚОС!
+                </h1>
+
+                <p class="hero_text">
+                    Ақтөбе Қаласы “Досжан хазірет” мешіті жанынаң салынып жатқан Әйел адамдарға арналған ІЛІМ АЛУ
+                    орталығы
+                </p>
+                <p class="hero_text">Мешіт құрылысы басталды</p>
+                <p class="hero_text">
+                    1 кірпішіңізді қалап, атыңызды жазып кетіңіз
+                </p>
+
+                <p class="hero_blue">
+                    Өзіңіз үшін үзілмейтін <span>сауап есігін ашыңыз</span>
+                </p>
+
+                <img class="main-img" id="img" src="./img/images/meshit.jpg" alt="картинка">
+
+                <p class="hero_blue-flex">
+                    <img src="./img/icons/photo.webp" alt="">
+                    1 кірпіш бағасы - 1000 тг
+                </p>
+
+                <div class="hero_btn">
+                    бізге <span>20 000</span> кірпіш керек
+                </div>
+
+                <p class="hero_text">
+                    Бүгінгі күннің зікірі мен садақасын таңдаңыз 😊
+                    скриншот алыңыз
+                </p>
+
+                <article class="article_card">
+                    <h2 class="article_title">Бүгінгі күннің садақасы мен зікірін тандаңыз</h2>
+                    <div class="take_block">
+                        <div class="take_block__left">
+                            <h3 class="block_left__title">СубханАллах <br> <span>(100 рет айту)</span></h3>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="take_block__right">
+                            <div class="block_right__title">400тг</div>
+                            <div class="wrap">
+                                <label for="">Садақа</label>
+                                <input type="checkbox" name="" id="" class="large">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kaspi_block">
+                        <img src="https://companieslogo.com/img/orig/KKS.F.D-d5cf09c2.png?t=1685426980" alt="kaspi">
+                        <div class="kaspi_right">
+                            <p>8 (747) 110-68-58</p>
+                            <p>Гульнур К</p>
+                        </div>
+                    </div>
+                    <p class="article_card__text">Садақа бергенде оқылатын дұға
+                        <br>
+                        رَبَّنَا تَقَبَّلْ مِنَّا اِنَّكَ اَنْتَ السَّمِيعُ الْعَلِيمُ
+                        <br>
+                        Оқылуы: «Раббанә тақаббәл миннә иннәкә әнтәссәмиғул алим».
+                        <br>
+                        Мағынасы: «Раббымыз бізден қабыл ет! <br> Күдіксіз Сен естушісің және білушісің».
+                    </p>
+                </article>
+
+                <div class="hero_blue hero_blue-last">
+                    Біз туралы
+                </div>
+
+                <div class="modal none">
+                    <div class="close-modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    <h2 class="modal_title">
+                        Мешіт туралы ақпарат
+                    </h2>
+
+                    <p class="modal_text">
+                        Қазіргі Шұбарқұдық маңындағы мешітті ол Бірман ұстаға салдырған. Мешіт ішінде жүз адам еркін тұрып намаз оқи алатын болған. Жалпы, мешіттің жобасы Қазандағы Юнусов мешітіне қарап жасалған деген пікір де бар. Біреулер алты күмбезді, ал кейбіреулер тоғыз күмбезді болған деген болжам айтады. «Алты күмбезді» деген пікір шындыққа жанасымды деп білеміз. Байқап қарасақ, екі түсті кірпіш пайдаланылған.
+                    </p>
+                </div>
+            </section>
+
+            <section class="form">
+                <form action="./pages/donation.html" class="form__form">
+                    <h2 class="form__title">
+                        <span class="span-block">Мешіт құрылысына үлес қосу</span>
+                        үшін форманы толтырыңыз:
+                    </h2>
+                    <div class="input-container">
+                        <input id="firstname" class="input" type="text" placeholder="Өзіңіздің атыңыз: " />
+                    </div>
+                    <div class="input-container">
+                        <input id="firstname" class="input" type="text" placeholder="Әкеңіздің аты:" />
+                    </div>
+                    <button type="text" class="submit">САДАҚА БЕРЕМІН</button>
+                    <p class="form__text">
+                        (әкеңіздің немесе басқа жақыныңыздың атынан садақа
+                        берсеңіз болады)
+                    </p>
+                </form>
+            </section>
+
+            <section class="notification">
+                Жоғарыдағы форманы міндетті түрде толтырыңыз, сіздің Нәзік жаңдылардын ілім алатын орталығына берген
+                көмегіңіз үшін Біз жамағат болып
+                <span class="bold">отбасыңыз бен табысыңызға береке тілеп дұға
+                    жасайды.</span>
+                Алла разы болсын!
+            </section>
+
+            <section class="cta">
+                <h2 class="cta__title">
+                    <span class="cta__title_blue">
+                        ДОСЖАН ХАЗРЕТ ӘЙЕЛ АДАМДАРДЫН ІЛІМ АЛУ ОРТАЛЫҒЫНЫН
+                    </span>
+
+                    ҚҰРЫЛЫСЫ БАСТАЛДЫ
+                </h2>
+
+                <div class="cta__help">
+                    <img src="./img/bg/cta-bg.webp" alt="" />
+                    <div class="cta__help_content">
+                        <span class="span-block">Жаңа медресемізге:</span>
+                        <span class="bold">20 000 кірпіш
+                            <span class="span-block">керек</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="kaspi_wrapper">
+                    <div class="kaspi_block">
+                        <img src="https://companieslogo.com/img/orig/KKS.F.D-d5cf09c2.png?t=1685426980" alt="kaspi">
+                        <div class="kaspi_right">
+                            <p>8 (747) 110- 68- 58</p>
+                            <p>Гульнур К</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="information-banner">
+                <h2 class="information-banner__title">
+                    Ақтөбе Қаласы “Досжан хазірет” мешіті жанынаң салынып жатқан Әйел адамдарға арналған
+                    <span class="information-banner__title_blue">ІЛІМ АЛУ орталығы</span>
+                </h2>
+            </section>
+            <h2 class="title" style="text-align: center; margin-bottom: 2rem; font-size: 3rem; color: #141157;">Мешіт құрылыс барысы</h2>
+            <div class="overflow">
+                <img src="./img/images/IMG_3410.webp" alt="image" />
+                <img src="./img/images/IMG_3412.webp" alt="images" />
+                <img src="./img/images/IMG_3413.webp" alt="images" />
+                <img src="./img/images/IMG_3415.webp" alt="images" />
+                <img src="./img/images/IMG_3416.webp" alt="images" />
+                <img src="./img/images/IMG_3417.webp" alt="images" />
+                <img src="./img/images/IMG_3418.webp" alt="images" />
+                <img src="./img/images/IMG_3420.webp" alt="images" />
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="by-button">
+            <a href="https://www.instagram.com/codecultis/ " class="by-link">Made by <span>CodeCult</span></a>
+        </div>
+    </footer>
+    <div class="overlay none"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let titles = [
+                { title: 'СубханАллах (100 рет айту)', price: '400тг' },
+                { title: 'Әлһамдулиллаһ (100 рет айту)', price: '700тг' },
+                { title: 'Аллаһу Әкбар (100 рет айту)', price: '1000тг' },
+                { title: 'Аллаһумма солли а’ла Мухаммад уа а’ла әәли Мухаммад (300 рет айту)', price: '2000тг' }
+            ];
+            let currentIndex = 0;
+            let intervalId = setInterval(changeText, 1000);
+            let pauseCheckbox = document.querySelector('.take_block__left input[type="checkbox"]');
+
+            function changeText() {
+                let titleElement = document.querySelector('.block_left__title');
+                let priceElement = document.querySelector('.block_right__title');
+                titleElement.innerHTML = titles[currentIndex].title + '<br><span>(100 рет айту)</span>';
+                priceElement.textContent = titles[currentIndex].price;
+                currentIndex = (currentIndex + 1) % titles.length;
+            }
+
+            pauseCheckbox.addEventListener('click', function () {
+                if (this.checked) {
+                    clearInterval(intervalId);
+                } else {
+                    intervalId = setInterval(changeText, 1000);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
