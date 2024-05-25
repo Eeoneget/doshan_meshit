@@ -87,6 +87,9 @@
         information-banner__title_blue{
             color: red;
         }
+        .modal{
+            height: auto;
+        }
         .wrap {
             display: flex;
             flex-direction: column;
@@ -291,7 +294,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             let titles = [
                 { title: 'СубханАллах (100 рет айту)', price: '400тг' },
-                { title: 'Әлһамдулиллаһ (100 рет айту)', price: '700тг' },
+                { title: 'Әлһамдулиллаһ (100 рет айту', price: '700тг' },
                 { title: 'Аллаһу Әкбар (100 рет айту)', price: '1000тг' },
                 { title: 'Аллаһумма солли а’ла Мухаммад уа а’ла әәли Мухаммад (300 рет айту)', price: '2000тг' }
             ];
@@ -302,7 +305,7 @@
             function changeText() {
                 let titleElement = document.querySelector('.block_left__title');
                 let priceElement = document.querySelector('.block_right__title');
-                titleElement.innerHTML = titles[currentIndex].title + '<br><span>(100 рет айту)</span>';
+                titleElement.innerHTML = titles[currentIndex].title + '<br><span>(${titles.price} рет айту)</span>';
                 priceElement.textContent = titles[currentIndex].price;
                 currentIndex = (currentIndex + 1) % titles.length;
             }
