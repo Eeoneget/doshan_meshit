@@ -150,7 +150,7 @@
                     <h2 class="article_title">Бүгінгі күннің садақасы мен зікірін тандаңыз</h2>
                     <div class="take_block">
                         <div class="take_block__left">
-                            <h3 class="block_left__title">СубханАллах <br> <span>(100 рет айту)</span></h3>
+                            <h3 class="block_left__title">СубханАллах</span></h3>
                             <input type="checkbox" name="" id="">
                         </div>
                         <div class="take_block__right">
@@ -305,7 +305,7 @@
             function changeText() {
                 let titleElement = document.querySelector('.block_left__title');
                 let priceElement = document.querySelector('.block_right__title');
-                titleElement.innerHTML = titles[currentIndex].title + `<br><span>(${titles.price} рет айту)</span>`;
+                titleElement.innerHTML = titles[currentIndex].title;
                 priceElement.textContent = titles[currentIndex].price;
                 currentIndex = (currentIndex + 1) % titles.length;
             }
