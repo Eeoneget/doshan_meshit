@@ -84,7 +84,7 @@
         .block_right__title {
             margin-bottom: 0 !important;
         } 
-        information-banner__title_blue{
+        .information-banner__title_blue{
             color: red;
         }
         .modal{
@@ -305,7 +305,7 @@
             function changeText() {
                 let titleElement = document.querySelector('.block_left__title');
                 let priceElement = document.querySelector('.block_right__title');
-                titleElement.innerHTML = titles[currentIndex].title + '<br><span>(${titles.price} рет айту)</span>';
+                titleElement.innerHTML = titles[currentIndex].title + `<br><span>(${titles.price} рет айту)</span>`;
                 priceElement.textContent = titles[currentIndex].price;
                 currentIndex = (currentIndex + 1) % titles.length;
             }
